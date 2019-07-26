@@ -5,9 +5,15 @@
 }
 #welcome{
   text-align:center;
+  padding-top:600px;
+  color:white;
+  font-family: 'Fascinate', cursive;
 }
+
 #description{
   text-align:center;
+  color:white;
+  font-family: 'Fascinate', cursive;
 }
 .nav{
  background-image:url("../images/nav.jpg");
