@@ -1,0 +1,22 @@
+.container-full{
+  background-image: url("../images/bg.jpg");
+  background-size:cover;
+ height:800px;
+}
+.nav{
+ position:fixed;
+ background-image: url("");
+ display:block;
+}
+.nav ul li{
+ margin:10px;
+ padding:0px;
+ float:right;
+ list-style: none;
+ display:block;
+ color:black;
+}
+.nav a:hover{
+ background-color: white;
+ padding: 50px 40px 40px 50px;
+}
