@@ -3,20 +3,26 @@
   background-size:cover;
  height:800px;
 }
+#welcome{
+  text-align:center;
+}
+#description{
+  text-align:center;
+}
 .nav{
- position:fixed;
- background-image: url("");
+ background-image:url("../images/nav.jpg");
+ height:100px;
  display:block;
 }
 .nav ul li{
  margin:10px;
  padding:0px;
  float:right;
- list-style: none;
+ list-style:none;
  display:block;
  color:black;
 }
 .nav a:hover{
  background-color: white;
- padding: 50px 40px 40px 50px;
+ padding: 10px 10px 10px 10px;
 }
