@@ -36,15 +36,16 @@
 text-align: center;
 font-family: 'Righteous', cursive;
 }
-.col-md-6{
-  font-family: 'Righteous', cursive;
-  font-size:27px;
+.img{
+length:200px;
+height:410px;
 }
-.col-md-4{
-  font-size:18px;
+#para{
+  font-family: 'Righteous', cursive;
+  font-size:26px;
+}
+/* .col-md-4{
+font-size:18px;
 font-family: 'Righteous', cursive;
 color:white;
-}
-.ordering{
-  text-align: center;
-}
+} */
