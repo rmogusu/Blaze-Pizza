@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .container-full{
   background-image: url("../images/bg.jpg");
   background-size:cover;
@@ -66,10 +69,12 @@ height:410px;
 .menu{
   text-align:center;
   margin-top:40px;
+  text-decoration:underline;
 }
 .container{
   background-color: black;
   color:white;
+  text-decoration: underline;
 }
 .toppings{
   margin-left:90px;
