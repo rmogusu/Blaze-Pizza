@@ -33,7 +33,7 @@
  padding: 10px 10px 10px 10px;
 }
 #abt{
-text-align: center;
+text-align: ceneter;
 font-family: 'Righteous', cursive;
 }
 .img{
@@ -44,8 +44,12 @@ height:410px;
   font-family: 'Righteous', cursive;
   font-size:26px;
 }
-/* .col-md-4{
-font-size:18px;
-font-family: 'Righteous', cursive;
-color:white;
-} */
+.text{
+  margin-left:140px;
+}
+.text1{
+  margin-left:80px;
+}
+.smal{
+  margin-top:100px;
+}
