@@ -34,14 +34,17 @@
 }
 #abt{
 text-align: center;
-font-family: 'Fascinate', cursive;
+font-family: 'Righteous', cursive;
 }
 .col-md-6{
-  font-family: 'Fascinate', cursive;
-  font-size:26px;
+  font-family: 'Righteous', cursive;
+  font-size:27px;
 }
 .col-md-4{
   font-size:18px;
-font-family: 'Fascinate', cursive;
+font-family: 'Righteous', cursive;
 color:white;
+}
+.ordering{
+  text-align: center;
 }
