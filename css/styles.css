@@ -115,3 +115,23 @@ margin-left:50px;
 .thanks{
   font-family: 'Righteous', cursive;
 }
+#contact{
+  margin-top:30px;
+  font-family: 'Righteous', cursive;
+  margin-left:50px;
+  border-radius: 100%;
+}
+.open{
+  margin-top:120px;
+  font-size:30px;
+}
+.cust{
+  border-radius:100%;
+  margin-left:40px;
+}
+.img{
+  border-radius:100%;
+}
+.title{
+  margin-left:100px;
+}
