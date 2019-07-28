@@ -92,21 +92,7 @@ const sizeList = {
  name: "Sizes",
  items: [large, medium, small]
 };
-function contact(form){
-        var name = document.forms["form1"]["yourname"].value;
-            var email = document.forms["form1"]["youremail"].value;
-            var message = document.forms["form1"]["message"].value;
-            alert("Hello " + name + "," + "  Thank you for reaching out to us.feel free anytime. ");
-          };
-
-$(document).ready(function() {
-  $("#size").submit(function(event) {
+$(".delivery").submit(function(event) {
     event.preventDefault()
-    var size = parseInt($("input[name='size']:checked").val());
-    var sizeName = sizeList.items[size].name
-    $("#checkouts").append("<li>" + sizeList.items[size].name + " " + sizeList.items[size].price + "</li>")
-    total += (sizeList.items[size].price)
-    alert("The total so far is: " + total)
-  })
-
-}
+    alert("jesus")
+  });
