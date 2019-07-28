@@ -72,3 +72,19 @@ const crustsList = {
   name: "Crusts",
   items: [thin, thick, deep, cripsy,glutten, stuffed]
 };
+const large = {
+ name: "Large Size",
+ price: 550
+};
+const medium = {
+ name: "Medium Size",
+ price: 400
+};
+const small = {
+ name: "Small Size",
+ price: 200
+};
+const sizeList = {
+ name: "Sizes",
+ items: [large, medium, small]
+};
