@@ -37,7 +37,7 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-6">
-            <img src="images/abt.jpg" alt="my-image" class="img">
+            <img src="images/abt.jpg" alt="my-image" class="img1">
           </div>
           <div class="col-md-6">
             <p id="para">We located in Nairobi, Moi Avenue street Mugaini House opposite Hilton hotel.
@@ -132,35 +132,38 @@
     <h3 class="online">Order online and it will be delivered unto your door!</h3>
     <div class="row">
       <div class="col-4">
-        <label class="select"> Select number of pizza</label>
-        <form class="sizes" id="size">
-          <input type="number" name="large" value="0">Large<br>
-          <input type="number" name="size" value="0">Medium<br>
-          <input type="number" name="size" value="0">Small<br>
-        </form>
+        <form class="sizes" id="select">
+          <label for="sizeselect" class="select"> Select pizza size</label><br>
+          <form class="sizes">
+            <input type="checkbox" name="size" value="100">Large Kshs. 1000 <br>
+            <input type="checkbox" name="size" value="700">Medium Kshs. 700<br>
+            <input type="checkbox" name="size" value="500">Small Kshs.500<br>
+            <label for="quantity" class="select">Quantity:</label>
+            <input type="number" id="quantity" min="1" name="quantity">
+          </form>
       </div>
       <div class="col-4">
         <label class="select">Select Crust</label>
-        <form class="crust">
-          <input type="radio" name="crust" value="0">Cripsy kshs.100<br>
-          <input type="radio" name="crust" value="1">Stuffed kshs.100<br>
-          <input type="radio" name="crust" value="2">Gluten kshs.100<br>
-          <input type="radio" name="crust" value="3">Thick kshs.150<br>
-          <input type="radio" name="crust" value="3">Deep kshs.150<br>
-          <input type="radio" name="crust" value="3">Thin kshs.150<br>
-          <input value="Order" type="submit" class="sub">
+        <form class="crust" id ="select">
+          <input type="radio" name="crust" value="100">Cripsy kshs.100<br>
+          <input type="radio" name="crust" value="100">Stuffed kshs.100<br>
+          <input type="radio" name="crust" value="100">Gluten kshs.100<br>
+          <input type="radio" name="crust" value="150">Thick kshs.150<br>
+          <input type="radio" name="crust" value="150">Deep kshs.150<br>
+          <input type="radio" name="crust" value="150">Thin kshs.150<br>
         </form>
       </div>
       <div class="col-4">
         <div id="tops">
           <label class="select">Select Toppings</label>
-          <form class="toppings">
-            <input type="checkbox" name="toppings" value="0">Extra cheeze Kshs. 70 <br>
-            <input type="checkbox" name="toppings" value="1">Black olive Kshs. 100<br>
-            <input type="checkbox" name="toppings" e="2">Pepperoni Kshs.100<br>
-            <input type="checkbox" name="toppings" value="3">Bacon Kshs. 150<br>
-            <input type="checkbox" name="toppings" value="5">Mushroom Kshs. 100<br>
-            <input type="checkbox" name="toppings" value="8">Sausage Kshs. 150<br>
+          <form class="toppings" id="select">
+            <input type="checkbox" name="topping" value="70">Extra cheeze Kshs. 70 <br>
+            <input type="checkbox" name="topping" value="100">Black olive Kshs. 100<br>
+            <input type="checkbox" name="topping" value="100">Pepperoni Kshs.100<br>
+            <input type="checkbox" name="topping" value="150">Bacon Kshs. 150<br>
+            <input type="checkbox" name="topping" value="100">Mushroom Kshs. 100<br>
+            <input type="checkbox" name="topping" value="150">Sausage Kshs. 150<br>
+            <input value="order" id="submit" type="submit" class="sub">
           </form>
         </div>
       </div>
@@ -169,11 +172,8 @@
   <hr>
   <div class="delivery">
     <h3 class="deli">Delivery is optional check here if you need it get to enjoy our services!</h3>
-    <form class="del">
-      <input type="radio" name="delivery" value="0">Yes<br>
-      <input type="radio" name="delivery" value="0">N0<br>
-      <input value="submit" type="submit" class="sub">
-    </form>
+    <button type="button" class="btn btn-primary" name="delivery" id="yes">Yes</button>
+    <button type="button" class="btn btn-primary" id="no">No</button>
   </div>
   <hr>
   <div class="check">
@@ -187,7 +187,7 @@
   <div id="contact">
     <div class="row">
       <div class="col-md-4">
-        <img src="images/image.jpg" alt="img" class="img" height="300px" width="400px">
+        <img src="images/image.jpg" alt="img" class="image" height="400px" width="400px">
         <h3 class="title">Managing director</h3>
         <p class="title">O715350171</p>
       </div>

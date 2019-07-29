@@ -1,98 +1,25 @@
-
-const bacon ={
-  name: "Bacon",
-  price: 150
-};
-const pepporoni = {
-  name: "Bell Pepper",
-  price: 100
-};
-const sausage= {
-  name: "sausage",
-  price: 150
-};
-
-const extraCheese = {
-  name: "extraCheese",
-  price: 70
-};
-const black olive = {
-  name: "black olive",
-  price: 100
-};
-const mushrooms = {
-  name: "Mushrooms",
-  price: 100
-};
-const toppingsList = {
-  name: "Toppings",
-  items: [sausage, bacon, extraCheese,black olive , pepporoni, mushrooms]
-}
-const large = {
-  name: "Large Size",
-  price:1000
-};
-const medium = {
-  name: "Medium Size",
-  price: 800
-};
-const small = {
-  name: "Small Size",
-  price: 700
-};
-const sizeList = {
-  name: "Sizes",
-  items: [large, medium, small]
-};
-const thin = {
-  name: "Thin Crust",
-  price: 70
-};
-const thick = {
-  name: "Thick Crust",
-  price: 100
-};
-const deep = {
-  name: "Deep Crust",
-  price: 100
-};
-const glutten = {
-  name: "Cheese Crust",
-  price: 150
-};
-const stuffed = {
-  name: "Stuffed Crust",
-  price: 250
-};
-const cripsy = {
-  name: "Stuffed Crust",
-  price: 250
-}
-const crustsList = {
-  name: "Crusts",
-  items: [thin, thick, deep, cripsy,glutten, stuffed]
-};
-const large = {
- name: "Large Size",
- price: 550
-};
-const large = {
- name: "large Size",
- price: 1000
-};
-const medium = {
- name: "medium Size",
- price: 700
-};
-const small= {
- name: "small Size",
- price: 500
-};
-const sizeList = {
- name: "Sizes",
- items: [large, medium, small]
-};
-$(".delivery").submit(function(event) {
-    event.preventDefault()
-    alert("jesus")
+$(document).ready(function() {
+  $("button#yes").click(function() {
+    var location = prompt("Please enter your location.");
+    var street = prompt("Please enter your street.");
+    var houseno = prompt("Please enter your housenumber."); {
+      alert("total charges for delivery is ksh.300 " + "Your order will be delivered to  " + " " + location + " " + street + " " + "houseNo " + houseno);
+    }
   });
+  $("button#no").click(function() {
+    alert("Thanks for shopping with us");
+  });
+
+  $("form#select").submit(function(event) {
+    event.preventDefault();
+    var size = $("input[name='size']:checked", '#order').val();
+    var topping = $("input[name='topping']:checked", '#order').val();
+    var crust = $("input[name='crust']:checked", '#order').val();
+    var quantity= $("input[name='quantity']:checked", '#order').val();
+
+    var price = function (size, crust, topping, quantity, delivery) {
+   return ((size + crust + toppings) * quantity) + delivery;
+   alert(price);
+ };
+ });
+});

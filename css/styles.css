@@ -1,136 +1,166 @@
-body{
+body {
   overflow-x: hidden;
 }
-.container-full{
+
+.container-full {
   background-image: url("../images/bg.jpg");
-  background-size:cover;
-  height:800px;
+  background-size: cover;
+  height: 800px;
 }
-#welcome{
-  text-align:center;
-  padding-top:600px;
-  color:white;
+
+#welcome {
+  text-align: center;
+  padding-top: 600px;
+  color: white;
   font-family: 'Fascinate', cursive;
 }
 
-#description{
-  text-align:center;
-  color:white;
+#description {
+  text-align: center;
+  color: white;
   font-family: 'Fascinate', cursive;
 }
-.nav{
- background-image:url("../images/nav.jpg");
- height:100px;
- display:block;
-}
-.nav ul li{
- margin:10px;
- padding:0px;
- float:right;
- list-style:none;
- display:block;
- color:black;
-}
-.nav a:hover{
- background-color: white;
- padding: 10px 10px 10px 10px;
-}
-#abt{
-text-align: center;
-font-family: 'Righteous', cursive;
-padding-top:20px;
-padding-bottom:20px;
-}
-.header{
-  text-align:center;
-  padding-top:20px;
-  font-family: 'Righteous', cursive;
-}
-.img{
-length:200px;
-height:410px;
-}
-#para{
-  font-family: 'Righteous', cursive;
-  font-size:26px;
-}
-.text{
-  margin-left:140px;
-  font-family: 'Righteous', cursive;
-}
-.text1{
-  margin-left:80px;
-  font-family: 'Righteous', cursive;
-}
-.smal{
-  margin-top:100px;
-  font-family: 'Righteous', cursive;
-}
-.menu{
-  text-align:center;
-  margin-top:40px;
 
+.nav {
+  background-image: url("../images/nav.jpg");
+  height: 100px;
+  display: block;
 }
-.container{
-  background-color:black;
-  color:white;
+
+.nav ul li {
+  margin: 10px;
+  padding: 0px;
+  float: right;
+  list-style: none;
+  display: block;
+  color: black;
 }
-.toppings{
-  margin-left:90px;
+
+.nav a:hover {
+  background-color: white;
+  padding: 10px 10px 10px 10px;
 }
-.crust{
-  margin-left:100px;
+
+#abt {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.order{
-  margin-top:50px;
-}
-.online{
-  text-align:center;
+
+.header {
+  text-align: center;
+  padding-top: 20px;
   font-family: 'Righteous', cursive;
 }
-.select{
-font-family: 'Righteous', cursive;
-margin-left:50px;
+
+.img1 {
+  length: 200px;
+  height: 410px;
 }
-.sizes{
-  margin-left:50px;
+
+#para {
+  font-family: 'Righteous', cursive;
+  font-size: 26px;
 }
-.toppings{
-  margin-left:50px;
+
+.text {
+  margin-left: 140px;
+  font-family: 'Righteous', cursive;
 }
-.crust{
-  margin-left:50px;
+
+.text1 {
+  margin-left: 80px;
+  font-family: 'Righteous', cursive;
 }
-.delivery{
-  text-align:center;
+
+.smal {
+  margin-top: 100px;
+  font-family: 'Righteous', cursive;
+}
+
+.menu {
+  text-align: center;
   margin-top: 40px;
 }
-.deli{
+
+.container {
+  background-color: black;
+  color: white;
+}
+
+.toppings {
+  margin-left: 90px;
+}
+
+.crust {
+  margin-left: 100px;
+}
+
+.order {
+  margin-top: 50px;
+}
+
+.online {
+  text-align: center;
   font-family: 'Righteous', cursive;
 }
-.check{
-  text-align:center;
-  margin-top:40px;
+
+.select {
+  font-family: 'Righteous', cursive;
+  margin-left: 50px;
 }
-.thanks{
+
+.sizes {
+  margin-left: 50px;
+}
+
+.toppings {
+  margin-left: 50px;
+}
+
+.crust {
+  margin-left: 50px;
+}
+
+.delivery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.deli {
   font-family: 'Righteous', cursive;
 }
-#contact{
-  margin-top:30px;
+
+.check {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thanks {
   font-family: 'Righteous', cursive;
-  margin-left:50px;
+}
+
+#contact {
+  margin-top: 30px;
+  font-family: 'Righteous', cursive;
+  margin-left: 50px;
   border-radius: 100%;
 }
-.open{
-margin-top:30px;
+
+.open {
+  margin-top: 30px;
 }
-.cust{
-  border-radius:100%;
-  margin-left:40px;
+
+.cust {
+  border-radius: 100%;
+  margin-left: 40px;
 }
-.img{
-  border-radius:100%;
+
+.image {
+  border-radius: 100%;
 }
-.title{
-  margin-left:100px;
+
+.title {
+  margin-left: 100px;
 }
