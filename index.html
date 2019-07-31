@@ -10,6 +10,7 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jQuery.js"></script>
   <title>Blaze-Pizza</title>
 </head>
 
@@ -75,113 +76,85 @@
       </div>
     </div>
     <hr>
-    <div class="container">
-      <div class="menu">
-        <h2><strong>OUR MENU</strong></h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="toppings">
-            <div class="toppings">
-              <h4>Bacon<span> ksh150</span></h4>
-            </div>
-            <div class="toppings">
-              <h4>Pepperoni<span> Ksh100</span></h4>
-            </div>
-            <div class="toppings">
-              <h4>Sausage<span> Ksh150</span></h4>
-            </div>
-            <div class="toppings">
-              <h4>Mushroom<span> Ksh100</span></h4>
-            </div>
-            <div class="toppings">
-              <h4>Black olive<span> Ksh100</span></h4>
-            </div>
-            <div class="toppings">
-              <h4>Extra cheeze <span> Ksh70</span></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="crust">
-            <div class="crust">
-              <h4>Cripsy<span> Ksh 70</span></h4>
-            </div>
-            <div class="crust">
-              <h4>Stuffed <span> Ksh 100</span></h4>
-            </div>
-            <div class="crust">
-              <h4>Glutten<span> Ksh 80</span></h4>
-            </div>
-            <div class="crust">
-              <h4>Thin<span> Ksh 50</span></h4>
-            </div>
-            <div class="crust">
-              <h4>Deep<span> Ksh 70</span></h4>
-            </div>
-            <div class="crust">
-              <h4>Thick<span> Ksh 50</span></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <hr>
   <div id="order">
-    <h3 class="online">Order online and it will be delivered unto your door!</h3>
-    <div class="row">
-      <div class="col-4">
-        <form class="sizes" id="select">
-          <label for="sizeselect" class="select"> Select pizza size</label><br>
-          <form class="sizes">
-            <input type="checkbox" name="size" value="100">Large Kshs. 1000 <br>
-            <input type="checkbox" name="size" value="700">Medium Kshs. 700<br>
-            <input type="checkbox" name="size" value="500">Small Kshs.500<br>
-            <label for="quantity" class="select">Quantity:</label>
-            <input type="number" id="quantity" min="1" name="quantity">
-          </form>
-      </div>
-      <div class="col-4">
-        <label class="select">Select Crust</label>
-        <form class="crust" id ="select">
-          <input type="radio" name="crust" value="100">Cripsy kshs.100<br>
-          <input type="radio" name="crust" value="100">Stuffed kshs.100<br>
-          <input type="radio" name="crust" value="100">Gluten kshs.100<br>
-          <input type="radio" name="crust" value="150">Thick kshs.150<br>
-          <input type="radio" name="crust" value="150">Deep kshs.150<br>
-          <input type="radio" name="crust" value="150">Thin kshs.150<br>
+    <h1 id="name">BLAZE-PIZZA ORDER FORM HERE!</h1>
+    <div class="fourteen1">
+      <div class="container">
+        <p class="four1">ORDER YOUR PIZZA PAP!!</p>
+        <form id="choice">
+          <div class="form-group selection">
+            <div id="choices">
+              <div class="form-group">
+                <label for="pizzaSize">Choose the size:</label>
+                <select class="form-control" id="pizzaSize" onchange="getSizeValue();">
+                  <option value="0">&nbsp;</option>
+                  <option value="500">Small -- Ksh. 500</option>
+                  <option value="700">Medium -- Ksh. 700</option>
+                  <option value="1000">Large -- Ksh. 1000</option>
+                </select>
+                <label for="crust">Chooose the crust:</label>
+                <select class="form-control" id="crust" onchange="getCrust();" required>
+                  <option value="0">&nbsp;</option>
+                  <option value="200">Cripsy---Ksh.200</option>
+                  <option value="100">Stuffed---Ksh.100</option>
+                  <option value="100">Glutten---Ksh100</option>
+                  <option value="100">Fried ---Ksh.100</option>
+                  <option value="150">Thin ---Ksh.150</option>
+                  <option value="200">Deep ---Ksh.200</option>
+                  <option value="150">Thick ---Ksh.150</option>
+                </select>
+                <label for="toppings"> toppings:</label><br>
+                <input type="checkbox" id="pepperoni" name="checks" value="150" onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="mushrooms" name="checks" value="100" onclick="getMushroom();">Mushrooms--Ksh.&nbsp;100<br>
+                <input type="checkbox" id="onions" name="checks" value="150" onclick="getOnions();">Onions--Ksh.&nbsp;150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="sausage" name="checks" value="100" onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;100<br>
+                <label for="many">Enter Number of pizza?</label>
+                <select class="form-control" id="many" onchange="getNumber();" required>
+                  <option value="0">&nbsp;</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select><br>
+              </div>
+            </div>
+            <div id="location">
+              <div class="form-group">
+                <label for="location">Choose the location of delivery:</label>
+                <select class="form-control" id="delivery" onchange="getLocation();">
+                  <option value="0">&nbsp;</option>
+                  <option value="100">Nairobi CBD--Ksh.100</option>
+                  <option value="200">Thika road -- Ksh.200</option>
+                  <option value="300">Rongai--Ksh.300</option>
+                  <option value="200">Ngong road--Ksh. 300</option>
+                  <option value="100">Mombasa road--Ksh.300</option>
+                  <option value="200">Kibra--Ksh.200</option>
+                  <option value="300">Kikuyu--Ksh.300</option>
+                  <option value="100">Westlands--Ksh.100</option>
+                  <option value="200">Eastleigh--Ksh.200</option>
+                </select>
+              </div>
+            </div>
+            <span class="btn btn-primary cancel" onclick="document.location.reload(true)">Cancel</span>
+            <span class="btn btn-primary text-right" id="Checkout" onclick="getTotalAmount(); clearFields();">Checkout</span>
+          </div>
         </form>
       </div>
-      <div class="col-4">
-        <div id="tops">
-          <label class="select">Select Toppings</label>
-          <form class="toppings" id="select">
-            <input type="checkbox" name="topping" value="70">Extra cheeze Kshs. 70 <br>
-            <input type="checkbox" name="topping" value="100">Black olive Kshs. 100<br>
-            <input type="checkbox" name="topping" value="100">Pepperoni Kshs.100<br>
-            <input type="checkbox" name="topping" value="150">Bacon Kshs. 150<br>
-            <input type="checkbox" name="topping" value="100">Mushroom Kshs. 100<br>
-            <input type="checkbox" name="topping" value="150">Sausage Kshs. 150<br>
-            <input value="order" id="submit" type="submit" class="sub">
-          </form>
-        </div>
+    </div>
+    <div class="fourteen2">
+      <div class="container">
+        <p>Your total /Bill is:</p>
+        <p id="fourteen3"></p>
+        <button class="btn btn-success" id="fourteen3button" onclick="document.location.reload(true)">Thanks for shooping with us</button>
       </div>
     </div>
-  </div>
-  <hr>
-  <div class="delivery">
-    <h3 class="deli">Delivery is optional check here if you need it get to enjoy our services!</h3>
-    <button type="button" class="btn btn-primary" name="delivery" id="yes">Yes</button>
-    <button type="button" class="btn btn-primary" id="no">No</button>
-  </div>
-  <hr>
-  <div class="check">
-    <button class=" check-out-button" id="check-out-button"><i class="fa fa-cutlery" aria-hidden="true"></i>
-      CHECK OUT</button>
-    <h4 class="thanks">Thank you shopping with us</h4>
-    <ul id="checkouts">
-    </ul>
   </div>
   <hr>
   <div id="contact">

@@ -1,25 +1,66 @@
-$(document).ready(function() {
-  $("button#yes").click(function() {
-    var location = prompt("Please enter your location.");
-    var street = prompt("Please enter your street.");
-    var houseno = prompt("Please enter your housenumber."); {
-      alert("total charges for delivery is ksh.300 " + "Your order will be delivered to  " + " " + location + " " + street + " " + "houseNo " + houseno);
+function getSizeValue() {
+    var selectedValue = document.getElementById("pizzaSize").value;
+    return parseInt(selectedValue);
+}
+
+function getCrust() {
+    var selectedCrust = document.getElementById("crust").value;
+    return parseInt(selectedCrust);
+}
+
+function getPepperoni() {
+    var pepperoni = 0;
+    var selectedPepperoni = document.getElementById("pepperoni");
+    if (selectedPepperoni.checked === true) {
+        pepperoni = 150;
     }
-  });
-  $("button#no").click(function() {
-    alert("Thanks for shopping with us");
-  });
+    return parseInt(pepperoni);
+}
 
-  $("form#select").submit(function(event) {
-    event.preventDefault();
-    var size = $("input[name='size']:checked", '#order').val();
-    var topping = $("input[name='topping']:checked", '#order').val();
-    var crust = $("input[name='crust']:checked", '#order').val();
-    var quantity= $("input[name='quantity']:checked", '#order').val();
+function getMushroom() {
+    var mushroom = 0;
+    var selectedMushroom = document.getElementById("mushrooms");
+    if (selectedMushroom.checked === true) {
+        mushroom = 100;
+    }
+    return parseInt(mushroom);
 
-    var price = function (size, crust, topping, quantity, delivery) {
-   return ((size + crust + toppings) * quantity) + delivery;
-   alert(price);
- };
- });
-});
+}
+
+
+function getOnions() {
+    var onions = 0;
+    var selectedOnions = document.getElementById("onions");
+    if (selectedOnions.checked === true) {
+        onions = 150;
+    }
+    return parseInt(onions);
+}
+
+function getSausage() {
+    var sausage = 0;
+    var selectedSausage = document.getElementById("sausage");
+    if (selectedSausage.checked === true) {
+        sausage = 100;
+    }
+    return parseInt(sausage);
+}
+
+function getNumber() {
+    var selectedNumber = document.getElementById("many").value;
+    return parseInt(selectedNumber);
+}
+
+function getLocation() {
+    var selectedLocation = document.getElementById("delivery").value;
+    return parseInt(selectedLocation);
+}
+
+function getTotalAmount() {
+    var totalAmount = (getSizeValue() + getCrust() + getPepperoni() + getMushroom() + getOnions() + getSausage()) * getNumber() + getLocation();
+    document.getElementById("fourteen3").innerHTML = "You ordered " + getNumber() + " pizza(s)." + " The Delivery cost is "+getLocation()+" Your  total bill is " + (totalAmount);
+}
+
+function clearFields(){
+    document.getElementById(choice).reset();
+}

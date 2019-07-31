@@ -23,7 +23,7 @@ body {
 
 .nav {
   background-image: url("../images/nav.jpg");
-  height: 100px;
+  height: 60px;
   display: block;
 }
 
@@ -163,4 +163,11 @@ body {
 
 .title {
   margin-left: 100px;
+}
+.select{
+  margin-left:50px;
+}
+#name{
+  text-align: center;
+  font-family: 'Righteous', cursive;
 }
