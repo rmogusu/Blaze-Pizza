@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -25,6 +28,8 @@ body {
   background-image: url("../images/nav.jpg");
   height: 60px;
   display: block;
+  position: sticky;
+  top:0;
 }
 
 .nav ul li {
